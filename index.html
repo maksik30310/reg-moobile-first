@@ -19,7 +19,7 @@
 					<div
 						class="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-4 shadow-lg shadow-blue-200"
 					>
-						<!-- Сюда можно человечка -->
+						<!-- здесь иконка юзера -->
 						<svg
 							xmlns="http://www.w3.org"
 							fill="none"
@@ -45,11 +45,90 @@
 
 				<!-- Сюда пойдут твои инпуты с замком и логином -->
 				<div class="space-y-4">
+					<div class="space-y-4">
+						<!-- Поле Имя (с ID "name") -->
+						<div class="relative">
+							<div
+								class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400"
+							>
+								<!-- Иконка человечка -->
+								<svg
+									xmlns="http://www.w3.org"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-5 h-5"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+									/>
+								</svg>
+							</div>
+							<input
+								type="text"
+								id="name"
+								placeholder="Ваше имя"
+								required
+								class="w-full h-14 pl-12 pr-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all text-base text-slate-700 placeholder:text-slate-400"
+							/>
+						</div>
+
+						<!-- Поле Пароль (с ID "password") -->
+						<div class="relative">
+							<div
+								class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400"
+							>
+								<!-- Иконка замка -->
+								<svg
+									xmlns="http://www.w3.org"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-5 h-5"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25z"
+									/>
+								</svg>
+							</div>
+							<input
+								type="password"
+								id="password"
+								placeholder="Пароль"
+								required
+								class="w-full h-14 pl-12 pr-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all text-base text-slate-700 placeholder:text-slate-400"
+							/>
+						</div>
+					</div>
 					<!-- Мы их добавим следующим шагом -->
 					<div
 						class="h-14 w-full bg-slate-100 rounded-2xl border-2 border-dashed border-slate-200 flex items-center justify-center text-slate-400"
 					>
-						Место для инпута
+						<button
+							type="submit"
+							class="w-full h-14 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-300 hover:bg-blue-700 active:scale-95 transition-transform duration-150 mt-6"
+						>
+							Создать аккаунт
+						</button>
+
+						<!-- Футер / Ссылка входа (если это конец формы) -->
+						<div class="mt-8 text-center">
+							<p class="text-sm text-slate-400">
+								Уже есть аккаунт?
+								<a
+									href="#"
+									class="text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+								>
+									Войти
+								</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
