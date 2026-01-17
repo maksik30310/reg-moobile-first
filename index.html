@@ -10,7 +10,7 @@
 		<div
 			class="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col items-center justify-center p-6"
 		>
-			<!-- Карточка формы (белая) — имитация экрана телефона -->
+			<!-- Карточка формы -->
 			<div
 				class="w-full max-w-[400px] bg-white rounded-[40px] shadow-2xl shadow-blue-100 p-8"
 			>
@@ -19,7 +19,7 @@
 					<div
 						class="inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl mb-4 shadow-lg shadow-blue-200"
 					>
-						<!-- здесь иконка юзера -->
+						<!-- иконка юзера -->
 						<svg
 							xmlns="http://www.w3.org"
 							fill="none"
@@ -44,7 +44,7 @@
 				</div>
 
 				<div class="space-y-4">
-					<!-- Поле Имя (с ID "name") -->
+					<!-- Поле Имя -->
 					<div class="relative">
 							<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
 									<!-- Иконка человечка -->
@@ -52,11 +52,22 @@
 											<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
 									</svg>
 							</div>
-							<input type="text" id="name" placeholder="Ваше имя" required
+							<input type="text" id=name" placeholder="Ваше имя" required
 									class="w-full h-14 pl-12 pr-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all text-base text-slate-700 placeholder:text-slate-400">
-					</div>
+					</div> 
+
+					<div class="relative">
+						<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+								<!-- Иконка человечка -->
+								<svg xmlns="http://www.w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+								</svg>
+						</div>
+						<input type="text" id="email" placeholder="Ваш email" required
+								class="w-full h-14 pl-12 pr-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all text-base text-slate-700 placeholder:text-slate-400">
+				</div>
 			
-					<!-- Поле Пароль (с ID "password") -->
+					<!-- Поле Пароль -->
 					<div class="relative">
 							<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
 									<!-- Иконка замка -->
@@ -68,7 +79,7 @@
 									class="w-full h-14 pl-12 pr-4 bg-slate-50 border border-slate-200 rounded-2xl outline-none focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 transition-all text-base text-slate-700 placeholder:text-slate-400">
 					</div>
 			</div>
-				
+				  <form id='regForm'>
 						<button
 							type="submit"
 							class="w-full h-14 bg-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-300 hover:bg-blue-700 active:scale-95 transition-transform duration-150 mt-6"
@@ -76,7 +87,7 @@
 							Создать аккаунт
 						</button>
 
-						<!-- Футер / Ссылка входа (если это конец формы) -->
+						<!-- Футер / Ссылка входа -->
 						<div class="mt-8 text-center">
 							<p class="text-sm text-slate-400">
 								Уже есть аккаунт?
@@ -88,8 +99,10 @@
 								</a>
 							</p>
 						</div>
+					</form>	
 					</div>
 				</div>
 			</div>
+			<scripr src='script.js'></scripr>
 	</body>
 </html>
